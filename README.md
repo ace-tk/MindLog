@@ -1,109 +1,49 @@
-# MindLog – Your Personal Mental Health Companion 🧠✨
+# MindLog
 
-MindLog is a comprehensive mental health journaling and mood tracking application designed to help users understand their emotional patterns and maintain mental well-being. Built with **React Native (Expo)** and a **Node.js/MongoDB** backend, it offers a seamless experience for daily reflection.
+MindLog is a mental health journal and mood tracking app. It helps users document their daily thoughts and keep track of their emotional well-being through stats and summaries. The project is split into a React Native frontend and a Node.js backend.
 
----
+## Features
 
-## 📽️ Preview & Design
-| Beautiful UI | Interactive Insights | Smart Journaling |
-| :---: | :---: | :---: |
-| ![Splash](https://raw.githubusercontent.com/Gautam-Bharadwaj/MindLog/main/src/assets/splash-icon.png) | ![Mood Tracking](https://raw.githubusercontent.com/Gautam-Bharadwaj/MindLog/main/src/assets/logo.png) | ![Modern Cards](https://raw.githubusercontent.com/Gautam-Bharadwaj/MindLog/main/src/assets/imageOne.jpg) |
+- **Daily Journaling**: Write notes and pick your mood for the day. It includes daily prompts to help you start writing and tags to categorize entries.
+- **Mood Tracking**: View trends over the last 7 or 30 days to see how your mood changes.
+- **Insights**: The app summarizes your data to show your most frequent moods and tags.
+- **Role Access**: Different interfaces for Patients and Wellness Inspectors.
+- **Calendar & Export**: Browse past entries via a calendar or export them to text files.
+- **Authentication**: Secure sign-in/sign-up and an onboarding flow for new users.
 
----
+## Tech Stack
 
-## 🚀 Key Features
+- **Frontend**: React Native, Expo, React Navigation
+- **Backend**: Node.js, Express, MongoDB
+- **Deployment**: Vercel (Backend)
 
-### 📖 Smart Journaling
-- **Mood Tracking:** Record how you feel with intuitive mood selectors (Happy, Neutral, Sad, Anxious, Angry).
-- **Daily Prompts:** Rotating pre-defined journaling questions to beat writer's block.
-- **Rich Entries:** Add text notes and optional tags (Work, Family, Health).
-- **Favorites:** Mark important reflections for quick access.
+## Project Structure
 
-### 📊 Powerful Insights
-- **Mood Trends:** Week/Month overview with color-coded trends.
-- **Statistics:** Analyze your most common moods and tags over the last 7/30 days.
-- **AI-Driven Summaries:** Personalized summary messages based on your emotional patterns.
+- `src/`: Frontend code including screens, components, and services.
+- `backend/`: Server-side code with models, routes, and controllers.
+- `App.js`: Main entry point for the mobile application.
 
-### 🔐 Security & Personalization
-- **Role-Based Access:** Specialized interfaces for **Patients** and **Wellness Inspectors**.
-- **Auth Flow:** Secure Sign-In and Sign-Up screens.
-- **Onboarding:** A smooth introduction to the app's core features.
+## How to Run
 
-### 🛠️ Utilities
-- **Calendar View:** Easily navigate through your history.
-- **Export Data:** Export your last 7/30 entries to text format.
-- **Lock Screen:** (Coming soon/Implemented) Keep your private thoughts secure.
-
----
-
-## 🏗️ Technology Stack
-
-**Frontend:**
-- React Native & Expo
-- React Navigation (Stack & Tabs)
-- Context API (State Management)
-- Expo Linear Gradient & Vector Icons
-
-**Backend:**
-- Node.js & Express.js
-- MongoDB with Mongoose
-- Vercel for Deployment
-
----
-
-## 📦 Project Structure
-```text
-MindLog/
-├── src/                # React Native Frontend
-│   ├── components/     # Reusable UI components
-│   ├── screens/        # App screens (Home, Journal, Stats, etc.)
-│   ├── services/       # API and Storage logic
-│   ├── navigation/     # App routing
-│   └── theme/          # Global styles and colors
-├── backend/            # Express.js API
-│   ├── models/         # Database schemas
-│   ├── routes/         # API endpoints
-│   └── controllers/    # Business logic
-└── App.js              # Entry point
+### 1. Clone the repository
+```bash
+git clone https://github.com/Gautam-Bharadwaj/MindLog.git
+cd MindLog
 ```
 
----
+### 2. Frontend Setup
+```bash
+npm install
+npx expo start
+```
 
-## 🚦 Getting Started
+### 3. Backend Setup
+```bash
+cd backend
+npm install
+# Create a .env file and add your MONGO_URI
+npm start
+```
 
-### Prerequisites
-- Node.js (v18+)
-- Expo Go app on your phone or an emulator
-
-### Installation
-1.  **Clone the repo:**
-    ```bash
-    git clone https://github.com/Gautam-Bharadwaj/MindLog.git
-    cd MindLog
-    ```
-2.  **Frontend Setup:**
-    ```bash
-    npm install
-    npx expo start
-    ```
-3.  **Backend Setup:**
-    ```bash
-    cd backend
-    npm install
-    # Set your MONGO_URI in .env
-    npm start
-    ```
-
----
-
-## 🤝 Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request to help improve MindLog.
-
----
-
-## 📄 License
-This project is licensed under the MIT License.
-
----
-
-*Made with ❤️ for Mental Well-being.*
+## Contributing
+If you want to contribute, feel free to open a pull request or report any issues you find.
